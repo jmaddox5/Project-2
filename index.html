@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mortgage Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="House Mortgage favicon.jpg" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <h1>Mortgage Calculator</h1>
+    </header>
+    <main>
+      <section class="calculator">
+        <img src="House Mortgage.jpeg" alt="House next to legal documents" />
+        <form id="mortgage-form">
+          <div class="form-group">
+            <label for="principal">Principal Amount ($):</label>
+            <input type="number" id="principal" required />
+          </div>
+          <div class="form-group">
+            <label for="rate">Yearly Interest Rate (%):</label>
+            <input type="number" step="0.01" id="rate" required />
+          </div>
+          <div class="form-group">
+            <label for="years">Mortgage Length (years):</label>
+            <select id="years" required>
+              <option value="10">10</option>
+              <option value="15">15</option>
+              <option value="30">30</option>
+            </select>
+          </div>
+          <button type="submit">Calculate</button>
+        </form>
+        <div id="result">
+          <p>Monthly Payment: $<span id="payment">0.00</span></p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        Check out the code behind this website on
+        <a href="https://github.com/jmaddox5/Project-2">GitHub</a>.
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
